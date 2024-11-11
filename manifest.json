@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Page Counter",
+  "version": "1.0.0",
+  "description": "A simple counter extension",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
